@@ -185,43 +185,5 @@ const Wrapper = styled.div`
 			}
 		}
 	}
-
-	@media (max-height: 850px) {
-		.top {
-			h1 {
-				font-size: 1rem;
-				padding: 1rem;
-			}
-		}
-
-		.bottom {
-			display: flex;
-			justify-content: center;
-			h2 {
-				font-size: 0.8rem;
-				padding: 0.8rem 1rem;
-			}
-		}
-	}
-
-	@media (max-height: 730px) {
-		.bottom {
-			display: flex;
-			/* flex-direction: column; */
-			align-items: center;
-
-			h2 {
-				padding: 0;
-				border: none;
-			}
-		}
-
-		.top {
-			h1 {
-				margin-top: 1rem;
-				padding: 0.2rem 1rem;
-			}
-		}
-	}
 `
 export default MidContainer
