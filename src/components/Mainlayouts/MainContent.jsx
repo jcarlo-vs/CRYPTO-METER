@@ -12,6 +12,6 @@ const MainContent = () => {
 const Wrapper = styled.div`
 	background-color: var(--light-3);
 	padding: 1rem;
-	height: 100%;
+	height: 80vh;
 `
 export default MainContent
