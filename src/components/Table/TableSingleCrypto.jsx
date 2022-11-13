@@ -37,8 +37,8 @@ const TableSingleCrypto = () => {
 									src={singleCryptoInfo.image}
 									alt=''
 								/>
-								<p className='crypto-name'>{singleCryptoInfo.name}</p>
 							</div>
+							<p className='crypto-name'>{singleCryptoInfo.name}</p>
 						</header>
 						{/* BODY */}
 						<div className='price-container'>
@@ -123,20 +123,24 @@ const Wrapper = styled.div`
 		gap: 3rem;
 		margin-bottom: 1rem;
 	}
+	.crypto-name {
+		flex: 1;
+	}
 	.image-name {
+		flex: 1;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 3rem;
+		/* gap: 3rem; */
 		/* height: 5rem; */
 	}
 	.img {
 		width: 4rem;
 	}
 	.rank {
-		padding-right: 5rem;
 		font-size: 3rem;
 		font-weight: bold;
+		flex: 1;
 	}
 	/* PRICE */
 	.price-container {
@@ -160,6 +164,7 @@ const Wrapper = styled.div`
 			}
 		}
 	}
+
 	footer {
 		box-shadow: 0 0 0 1px #33333334;
 		width: 100%;

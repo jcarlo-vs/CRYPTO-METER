@@ -70,5 +70,16 @@ const Wrapper = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 500px) {
+		padding: 1rem;
+
+		img {
+			max-width: 15rem;
+		}
+		.menu-icon {
+			font-size: 4rem;
+		}
+	}
 `
 export default Navbar
