@@ -24,8 +24,7 @@ const Wrapper = styled.div`
 	display: grid;
 	grid-template-columns: 15% 0 1fr;
 	height: 100%;
-	/* height: 100vh; */
-	/* position: relative; */
+
 	.left-content {
 		display: grid;
 		grid-template-rows: 10% 1fr;
