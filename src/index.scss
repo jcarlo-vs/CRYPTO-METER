@@ -7,6 +7,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	height: -webkit-fill-available;
+}
 
 :root {
 	--primary-1: #011028;
