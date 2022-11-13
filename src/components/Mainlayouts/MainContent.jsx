@@ -3,7 +3,7 @@ import ContentLayout from '../ContentLayouts/ContentLayout'
 
 const MainContent = () => {
 	return (
-		<Wrapper className='container-pad'>
+		<Wrapper>
 			<ContentLayout />
 		</Wrapper>
 	)
@@ -11,6 +11,7 @@ const MainContent = () => {
 
 const Wrapper = styled.div`
 	background-color: var(--light-3);
-	height: 90vh;
+	padding: 1rem;
+	height: 85vh;
 `
 export default MainContent

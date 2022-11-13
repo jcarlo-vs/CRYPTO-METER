@@ -23,7 +23,8 @@ const SharedLayout = () => {
 const Wrapper = styled.div`
 	display: grid;
 	grid-template-columns: 15% 0 1fr;
-	height: 80vh;
+	height: 100%;
+	/* height: 100vh; */
 	/* position: relative; */
 	.left-content {
 		display: grid;
