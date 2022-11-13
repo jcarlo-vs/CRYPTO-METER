@@ -18,7 +18,6 @@ const Header = ({ content, id }) => {
 
 const Wrapper = styled.div`
 	color: var(--light-1);
-	/* color: red; */
 	background-color: var(--primary-3);
 	text-align: center;
 	display: flex;

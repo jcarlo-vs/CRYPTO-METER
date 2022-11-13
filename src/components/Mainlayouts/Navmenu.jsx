@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 		gap: 2rem;
 	}
 	h3 {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 	}
 	span {
 		font-size: 2rem;
@@ -76,7 +76,7 @@ const Wrapper = styled.div`
 
 	@media (max-width: 83em) {
 		h3 {
-			font-size: 1rem;
+			font-size: 1.3rem;
 		}
 		li {
 			gap: 0.5rem;

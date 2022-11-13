@@ -10,31 +10,32 @@ import Sidebar from '../components/Mainlayouts/Sidebar'
 const SharedLayout = () => {
 	return (
 		<Wrapper className='container'>
-			<Sidebar />
-			<MobileMenubar />
+			<div className='right-content'>
+				<Sidebar />
+			</div>
 			<div className='left-content'>
 				<Navbar />
 				<MainContent />
 			</div>
+			<MobileMenubar />
 		</Wrapper>
 	)
 }
 
 const Wrapper = styled.div`
-	display: grid;
-	grid-template-columns: 15% 0 1fr;
-	height: 100%;
+	display: flex;
 
+	.right-content {
+		flex: 0.2;
+	}
 	.left-content {
-		display: grid;
-		grid-template-rows: 10% 1fr;
+		flex: 1;
 	}
 
-	@media (max-width: 95em) {
-		.side-bar {
+	@media (max-width: 1500px) {
+		.right-content {
 			display: none;
 		}
-		grid-template-columns: 1fr;
 	}
 `
 export default SharedLayout

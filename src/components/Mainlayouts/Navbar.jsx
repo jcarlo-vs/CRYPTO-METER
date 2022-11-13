@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 3rem 1rem;
+	padding: 0.5rem 2rem;
 	img {
 		width: 20rem;
 	}
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 		display: none;
 	}
 
-	@media (max-width: 95em) {
+	@media (max-width: 1500px) {
 		.navmenu {
 			display: flex;
 		}

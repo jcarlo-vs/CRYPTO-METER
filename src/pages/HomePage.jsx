@@ -21,14 +21,10 @@ const HomePage = () => {
 }
 
 const Wrapper = styled.div`
-	display: grid;
-	grid-template-rows: 1fr 0.3fr;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	height: 100%;
-	/* border: solid 2px violet; */
-	/* overflow: hidden; */
-	@media (max-width: 1200px) {
-		grid-template-rows: 22% 1fr;
-	}
 `
 
 export default HomePage

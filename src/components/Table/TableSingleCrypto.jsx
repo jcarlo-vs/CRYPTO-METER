@@ -199,22 +199,6 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media (max-height: 845px) {
-		.rank,
-		.price-container,
-		.crypto-name {
-			font-size: 1.8rem;
-		}
-
-		p {
-			font-size: 1.3rem;
-		}
-
-		footer {
-			max-height: 14rem;
-			padding: 1rem;
-		}
-	}
 	@media (max-height: 790px) {
 		.rank,
 		.price-container,

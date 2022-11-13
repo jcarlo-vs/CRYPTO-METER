@@ -12,7 +12,6 @@ const Sidebar = () => {
 
 const Wrapper = styled.div`
 	margin-top: 10rem;
-	height: 100%;
 	box-shadow: 1px 0 0 #3333333c;
 	display: grid;
 	grid-template-rows: max-content auto;

@@ -4,33 +4,35 @@ import formatPrice from '../../utils/formatPrice'
 const TableBodySmall = ({ value, exchange }) => {
 	return (
 		<TableBodyWrapper>
-			<table>
-				<tbody>
-					{value.map((item, index) => {
-						const { image, name, priceBTC, rank, symbol } = item
+			<div className='table-container'>
+				<table>
+					<tbody>
+						{value.map((item, index) => {
+							const { image, name, priceBTC, rank, symbol } = item
 
-						return (
-							<tr key={index}>
-								<td className='rank'>{rank}</td>
+							return (
+								<tr key={index}>
+									<td className='rank'>{rank}</td>
 
-								<td>
-									<div className='flex'>
-										<img
-											className='img'
-											src={image}
-											alt=''
-										/>
-										<p>{name}</p>
-									</div>
-								</td>
+									<td>
+										<div className='flex'>
+											<img
+												className='img'
+												src={image}
+												alt=''
+											/>
+											<p>{name}</p>
+										</div>
+									</td>
 
-								{!exchange && <td className='symbol'>{symbol.toUpperCase()}</td>}
-								<td>{formatPrice(priceBTC)}</td>
-							</tr>
-						)
-					})}
-				</tbody>
-			</table>
+									{!exchange && <td className='symbol'>{symbol.toUpperCase()}</td>}
+									<td>{formatPrice(priceBTC)}</td>
+								</tr>
+							)
+						})}
+					</tbody>
+				</table>
+			</div>
 		</TableBodyWrapper>
 	)
 }
@@ -38,8 +40,7 @@ export default TableBodySmall
 
 const TableBodyWrapper = styled.div`
 	width: 100%;
-	height: 15rem;
-	overflow-y: scroll;
+	height: 100%;
 	table {
 		border-collapse: collapse;
 		width: 100%;
@@ -62,57 +63,5 @@ const TableBodyWrapper = styled.div`
 
 	.flex {
 		gap: 1rem;
-	}
-
-	@media (max-width: 1200px) {
-		height: 10rem;
-		.symbol {
-			/* display: none; */
-		}
-		tbody {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			justify-items: center;
-			width: 100%;
-			height: 80%;
-			padding: 1rem;
-			td {
-				width: 10rem;
-			}
-		}
-	}
-
-	@media (max-width: 980px) {
-		.symbol {
-			display: none;
-		}
-		.flex {
-			width: 2rem;
-		}
-	}
-	@media (max-width: 678px) {
-		tbody {
-			grid-template-columns: 1fr;
-		}
-	}
-
-	@media (max-width: 420px) {
-		.rank {
-			width: 2rem;
-		}
-		.img {
-			width: 2rem;
-		}
-	}
-
-	@media (max-height: 730px) {
-		padding: 0;
-		margin: 0;
-		height: 7rem;
-		td {
-			height: 1rem;
-			margin: 0;
-			padding: 0.5rem;
-		}
 	}
 `
